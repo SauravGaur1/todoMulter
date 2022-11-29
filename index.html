@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="leftContainer">
+            <h1>TASK LIST</h1>
+            <p style="color: grey;">Add tasks to your list by typing to the right and pressing enter.You may then view pending tasks below</p>
+            <div class="listContainer" id="listContainer">
+                     
+            </div>
+        </div>
+        <div class="rightContainer">
+                <form id="form" action="/saveTodo" method="post" enctype="multipart/form-data">
+                    <input name="data" type="text" id="textArea" placeholder="I need to..." required >
+                    <input type="file" name="todoPic" id="todoPic" required>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+               <!-- <textarea id="textArea" placeholder="I need to..."></textarea> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
